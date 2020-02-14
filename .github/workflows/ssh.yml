@@ -1,0 +1,15 @@
+name: Ubuntu
+on:
+  watch:
+    types: [started]
+  push:
+    tags:
+    - 'v*'
+    branches: 
+      - master
+jobs:
+  Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH connection to Actions
+      uses: p3terx/debugger-action@master

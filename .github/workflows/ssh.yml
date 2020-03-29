@@ -14,8 +14,8 @@ jobs:
     - name: SSH connection to Actions
       uses: p3terx/debugger-action@master
  
-    - name: Upload bin directory
-      uses: actions/upload-artifact@master
-      with:
-        name: OpenWrt_dl
-        path: lede/dl
+    #- name: Upload bin directory
+    #  uses: actions/upload-artifact@master
+    #  with:
+    #   name: OpenWrt_dl
+    #    path: lede/dl
